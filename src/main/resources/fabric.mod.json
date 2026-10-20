@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "laperhardcore",
+  "version": "${version}",
+  "name": "Laper Hardcore Intro",
+  "description": "Sinematik perkenalan member: loading terrain, kamera dari jauh, firework, jalan dan pose per member.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.laper.lhc.LhcMod"],
+    "client": ["com.laper.lhc.client.LhcClientMod"]
+  },
+  "mixins": [{ "config": "laperhardcore.mixins.json", "environment": "client" }],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
